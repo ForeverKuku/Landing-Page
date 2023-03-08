@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: whitesmoke;
+}
+header .nav {
+  display: flex;
+  gap: 2rem;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.firstClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 60vh;
+  padding: 1rem;
+}
+.firstClass .sideNotes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  min-height: 100%;
+}
+.firstClass button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  background: #8EADD5;
+  color: white;
+  border: none;
+}
+.firstClass .image1 > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.threeDivision {
+  min-height: 80vh;
+  margin-top: 4rem;
+}
+.threeDivision .topText {
+  text-align: center;
+}
+.threeDivision h2 {
+  font-size: 2em;
+  padding: 1rem;
+  width: 40%;
+  background: white;
+  margin: auto;
+}
+.threeDivision .testimonialCards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 70%;
+  padding: 1rem;
+  gap: 1rem;
+}
+.threeDivision .testimonials {
+  width: 33.3%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  padding: 1rem;
+}
+
+.testimonialCards .testimonials > img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+footer .container {
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+footer .container .row {
+  display: flex;
+  justify-content: space-around;
+  gap: 10rem;
+}
+
+.footer .container > a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .firstItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+.cpy-right {
+  text-align: center;
+}
+
+.bigthing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+.bigText {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.bigthing .bigText > button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  background: #8EADD5;
+  color: white;
+  border: none;
+}
+
+#hamburger {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+header .nav.showlist {
+  transform: translateX(0);
+}
+
+@media (max-width: 820px) {
+  header {
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: relative;
+    padding-left: 0;
+  }
+  header .logo {
+    margin-left: 1rem;
+  }
+  header .nav {
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(0, 204, 255, 0.76);
+    width: 100%;
+    align-items: center;
+    top: 3.8rem;
+    text-align: center;
+    gap: 0;
+    transform: translateX(-100%);
+    transition: 0.2s ease-in;
+  }
+  header .nav > a {
+    width: 100%;
+    padding-block: 1rem;
+  }
+  header .nav > a:hover {
+    background-color: #8EADD5;
+  }
+  #hamburger {
+    display: block;
+  }
+  .firstClass {
+    flex-direction: column;
+    align-items: center;
+  }
+  .threeDivision {
+    width: 100vw;
+  }
+  .threeDivision .testimonialCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .threeDivision .testimonialCards > .testimonials {
+    width: 70%;
+  }
+  .bigthing {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .container .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .row {
+    width: 100%;
+  }
+  .firstItem {
+    width: 100%;
+  }
+  .secondItem {
+    width: 100%;
+  }
+  .thirdItem {
+    width: 100%;
+  }
+  .fourItem {
+    width: 100%;
+  }
+  .cpy-right {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .threeDivision .testimonialCards > .testimonials {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
