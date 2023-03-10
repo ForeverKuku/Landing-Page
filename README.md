@@ -1,2 +1,2 @@
 # Html Landing-Page
-Landing Page that includes hmtl, css and javascript
+Landing Page that includes html, css and javascript
